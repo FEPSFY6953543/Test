@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrust Vectoring</title>
+  <meta name="description" content="Learn about thrust vectoring technology used in aircraft and spacecraft.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #references li, #references a {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+  </style>
+  </head>
+<body>
+  <img src="WebBanner2023.png" alt="University of Surrey text logo with dark silhouette of a stag against a light background" class="top-left-logo">
+
+  <main class="content-shell">
+    <section class="content">
+
+      <h1 class="page-title">Thrust Vectoring: What is it and how is it used?</h1>
+
+      <div id="Abstract_InText" class="content-section">
+        <h2>Abstract</h2>
+        <p>
+          Thrust vectoring is a flight control technique whereby the direction of an engine’s exhaust is deliberately deflected to generate control moments or additional lift independent of conventional aerodynamic surfaces. This paper outlines the purpose and historical development of thrust vectoring and examines two landmark implementations: the Harrier family, which operationalised vectored thrust for vertical/short take-off and landing (V/STOL), and the F-22 Raptor, which employs two-dimensional pitch-vectoring nozzles to augment agility at high angles of attack and to expand the controllable flight envelope. The analysis highlights how engine-flow direction, in concert with fly-by-wire control laws and airframe design, can provide decisive handling qualities during times where aerodynamic control is ineffective. Furthermore, the paper continues into the future of thrust vectoring, focusing on emerging distributed electric propulsion (DEP) systems for drones, which promise enhanced manoeuvrability, safety, and control precision through multiple independently vectored thrust sources.
+        </p>
+      </div>
+
+      <div id="Analysis_InText" class="content-section">
+        <h2>The Harrier Jump-Jet</h2>
+        <p>
+          The Harrier programme transformed vectored thrust from experimental concept to robust operational capability. Originating with the P.1127 in 1960 and entering RAF service as the Harrier GR.1 in 1969, the design’s centrepiece was the Rolls-Royce Pegasus turbofan with four mechanically swivelling nozzles. These nozzles directed the combined core and bypass flow vertically for lift during take-off and landing, or aft for conventional forward flight, with intermediate angles enabling short or rolling departures and shipboard operations without catapults or arrestor gear. The resulting V/STOL flexibility supported areas in which it could be based, rapid sortie generation from un-ideal sites, and distinctive close-air-support profiles. From a control standpoint, vectored thrust provided authoritative low-speed handling and transition control that conventional aerodynamic surfaces could not, effectively creating lift and control moments from propulsive flow where wing-borne lift was insufficient. The Harrier thereby established the first sustained, large-scale operational use of thrust vectoring in a combat aircraft and demonstrated the strategic and tactical value of propulsion-based control.
+          In fact, because it was so revolutionary, it was a massive export success for the UK, with the US Marine Corps adopting a variant as the AV-8B Harrier II, and several other nations procuring the type for their own air forces. The Harrier’s vectored-thrust system proved reliable and effective in diverse operational theatres, from the Falklands War to Gulf conflicts, validating the concept of thrust vectoring as a force multiplier in modern air combat.
+        </p>
+
+        <p class="sources-panel">
+          <button type="button" class="toggle-sources" aria-expanded="false" aria-controls="sources-list-2">
+            Show Sources
+          </button>
+        </p>
+        <ul id="sources-list-2" class="sources-list" hidden>
+          <li>
+            <a href="https://avi-8.co.uk/blogs/the-aviation-journal/harrier-jump-jet-the-revolutionary-aircraft-that-changed-aerial-warfare?srsltid=AfmBOopd53ivsSnMdTi5_lY61qMb3VS7OeuXaW2B0xB5tk2K3FI7WL5t&shpxid=a7d4b7df-4472-4c26-bef5-f40c8eb603aa" target="_blank" rel="noopener">
+              AVI-8: Harrier Jump Jet - The Revolutionary Aircraft that Changed Aerial Warfare
+            </a>
+          </li>
+          <li>
+            <a href="https://www.flightglobal.com/flight-international/harrier-the-worlds-first-vstol-fighter/112447.article" target="_blank" rel="noopener">
+              Flight Global: Harrier - The World's First V/STOL Fighter
+            </a>
+          </li>
+        </ul>
+
+        <figure class="content-figure">
+          <img src="harrier-jump-jet.jpg" alt="Harrier GR1 on display on a runway" class="content-image">
+          <figcaption>Harrier GR1 demonstrating vectored-thrust VTOL capability.</figcaption>
+        </figure>
+
+        <p class="sources-panel">
+          <button type="button" class="toggle-sources" aria-expanded="false" aria-controls="sources-list-5">
+            Show Sources
+          </button>
+        </p>
+        <ul id="sources-list-5" class="sources-list" hidden>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Hawker_Siddeley_Harrier_GR1,_UK_-_Air_Force_AN2256552.jpg" target="_blank" rel="noopener">
+              Wikimedia Commons: Harrier GR1
+            </a>
+          </li>
+        </ul>
+
+        <h3>The F-22 Raptor</h3>
+        <p>
+          The F-22 Raptor represents a distinct lineage of thrust vectoring aimed at agility and control augmentation rather than V/STOL. Its two-dimensional pitch-vectoring nozzles can deflect approximately ±20° in the vertical plane, generating direct pitch moments and enhancing control authority at high AoA where aerodynamic surfaces become less effective. Integrated with a full-authority, digital fly-by-wire system, the vectoring is harmonised with airframe aerodynamics to maintain stability and provide precise attitude control during aggressive manoeuvres and post-stall regimes. The Pratt & Whitney F119 engines supply a high thrust-to-weight ratio and enable supercruise, sustaining supersonic flight without afterburner; the combination of supercruise performance, vectoring-augmented control, and advanced sensor-fusion enhances energy management, nose-pointing capability, and overall tactical flexibility. In operational terms, two-dimensional vectoring offers a pragmatic balance of mechanical complexity, signature control, and benefit to pitch manoeuvrability, contributing to the Raptor’s reputation for superior handling and envelope expansion relative to non-vectoring contemporaries.
+        </p>
+
+        <p class="media-actions">
+          <a href="https://www.youtube.com/watch?v=wdLVZDNPdfQ" target="_blank" rel="noopener" class="video-button">F-22 thrust vectoring demo</a>
+        </p>
+      
+        <p class="sources-panel">
+          <button type="button" class="toggle-sources" aria-expanded="false" aria-controls="sources-list-3">
+            Show Sources
+          </button>
+        </p>
+        <ul id="sources-list-3" class="sources-list" hidden>
+          <li>
+            <a href="https://avi-8.co.uk/blogs/the-aviation-journal/the-f-22-raptor-the-worlds-most-advanced-stealth-fighter?srsltid=AfmBOooI4i5jtyMBZ8Exh9bavr-we2WSAQjLXu0U58U0b7FWYgba4x-9&shpxid=b06436c0-976e-4f9f-9b5d-716efcb4ab71" target="_blank" rel="noopener">
+              AVI-8: The F-22 Raptor – The World’s Most Advanced Stealth Fighter
+            </a>
+          </li>
+          <li>
+            <a href="https://simpleflying.com/how-the-f-22-raptors-thrust-vectoring-nozzles-work/" target="_blank" rel="noopener">
+              Simple Flying: How the F-22 Raptor’s Thrust-Vectoring Nozzles Work
+            </a>
+          </li>
+        </ul>
+
+        <h4>The Future of Thrust Vectoring:</h4>
+        <p>
+          Distributed Electric Propulsion (DEP) drones are emerging as the most practical, scalable and cost-effective future development of thrust vectoring, offering a level of agility, safety, and control precision that traditional mechanical or fluidic systems cannot match.
+          In DEP architectures, multiple electrically driven rotors are distributed across a drone’s wings or fuselage, each capable of independent thrust vectoring. By varying the speed or tilt of individual motors, the aircraft synthesises a controllable thrust vector without relying on heavy mechanical actuators or moving nozzles.
+          Furthermore, General Distributed propulsion is being explored for larger aircraft, where multiple smaller engines with vectoring nozzles can provide similar benefits in terms of control and agility, while also drastically improving fuel efficiency and reducing emissions.
+          This new technology also reduces the sound signature of the aircraft, making it less detectable in military applications. Ultimately, these new systems could revolutionise both military and civilian aviation by enabling highly manoeuvrable, efficient, and stealthy aircraft designs.
+        </p>
+        <p class="sources-panel">
+          <button type="button" class="toggle-sources" aria-expanded="false" aria-controls="sources-list-4">
+            Show Sources
+          </button>
+        </p>
+        <ul id="sources-list-4" class="sources-list" hidden>
+          <li>
+            <a href="https://www.mdpi.com/2504-446X/9/10/689#:~:text=Thrust%20vectoring%20technology%20significantly%20improves,direction%20and%20magnitude%20of%20thrust." target="_blank" rel="noopener">
+              Review of Thrust Vectoring Technology Applications in Unmanned Aerial Vehicles
+            </a>
+          </li>
+          <li>
+            <a href="https://www1.grc.nasa.gov/wp-content/uploads/2018EATS-Review-of-DEP-Hyun-D.-6.2018-4998.pdf" target="_blank" rel="noopener">
+              NASA: Review of Distributed Electric Propulsion
+            </a>
+          </li>
+          <li> 
+            <a href="https://pure.tudelft.nl/ws/files/104467739/6.2022_0128.pdf" target="_blank" rel="noopener">
+              Delft University of Technology: Aerodynamic Analysis of Distributed Electric Propulsion Aircraft
+            </a>
+          </li>
+
+        </ul>
+        <h5>Conclusion</h5>
+        <p>
+          Over the span of 70 years, thrust vectoring has evolved from a theoretical concept to a critical part of modern aerospace engineering. From the pioneering V/STOL capabilities of the Harrier to the agility-enhancing nozzles of the F-22 Raptor, thrust vectoring has demonstrated its value in expanding flight envelopes and enhancing manoeuvrability. Although arguably being the two main examples of this being the Harrier and F-22, the technology is also used in other scenarios, from missles such as the AIM-9X Sidewinder, to space exploration vehicles like the SpaceX Falcon 9, which uses thrust vectoring for precise landing maneuvers.
+          Looking ahead, distributed electric propulsion systems promise to further revolutionise thrust vectoring by enabling precise, responsive control through multiple independent thrust sources. As these technologies mature, they hold the potential to redefine aircraft performance, safety, and efficiency across both military and civilian domains.
+          
+        </p>
+      </div>
+
+      <section id="references" class="content-section">
+        <h2>References</h2>
+        <ol>
+          <li>
+            NASA (1971) <em>Thrust vectoring technology</em>. NASA Technical Report (NTRS 19710016808). Available at: https://ntrs.nasa.gov/api/citations/19710016808/downloads/19710016808.pdf.
+          </li>
+          <li>
+            NASA (n.d.) <em>‘Vectored Thrust – Beginner’s Guide to Aeronautics’</em>. Available at: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/vectored-thrust/.
+          </li>
+          <li>
+            AVI-8 (n.d.) <em>‘Harrier Jump Jet – The Revolutionary Aircraft that Changed Aerial Warfare’</em>. Available at: https://avi-8.co.uk/blogs/the-aviation-journal/harrier-jump-jet-the-revolutionary-aircraft-that-changed-aerial-warfare.
+          </li>
+          <li>
+            FlightGlobal (2014) <em>‘Harrier – The World’s First V/STOL Fighter’</em>. Available at: https://www.flightglobal.com/flight-international/harrier-the-worlds-first-vstol-fighter/112447.article.
+          </li>
+          <li>
+            Wikimedia Commons (n.d.) <em>‘Hawker Siddeley Harrier GR1, UK – Air Force’</em>. Available at: https://commons.wikimedia.org/wiki/File:Hawker_Siddeley_Harrier_GR1,_UK_-_Air_Force_AN2256552.jpg.
+          </li>
+          <li>
+            AVI-8 (n.d.) <em>‘The F-22 Raptor – The World’s Most Advanced Stealth Fighter’</em>. Available at: https://avi-8.co.uk/blogs/the-aviation-journal/the-f-22-raptor-the-worlds-most-advanced-stealth-fighter.
+          </li>
+          <li>
+            Simple Flying (2023) <em>‘How the F-22 Raptor’s Thrust-Vectoring Nozzles Work’</em>. Available at: https://simpleflying.com/how-the-f-22-raptors-thrust-vectoring-nozzles-work/.
+          </li>
+          <li>
+            MDPI (2023) <em>‘Review of Thrust Vectoring Technology Applications in Unmanned Aerial Vehicles’</em>. Available at: https://www.mdpi.com/2504-446X/9/10/689#:~:text=Thrust%20vectoring%20technology%20significantly%20improves,direction%20and%20magnitude%20of%20thrust.
+          </li>
+          <li>
+            NASA (2018) <em>‘Review of Distributed Electric Propulsion’</em>. Available at: https://www1.grc.nasa.gov/wp-content/uploads/2018EATS-Review-of-DEP-Hyun-D.-6.2018-4998.pdf.
+          </li>
+          <li>
+            Delft University of Technology (2022) <em>‘Aerodynamic Analysis of Distributed Electric Propulsion Aircraft’</em>. Available at: https://pure.tudelft.nl/ws/files/104467739/6.2022_0128.pdf.
+          </li>
+        </ol>
+      </section>
+
+      <div class="meta">
+        <div id="last-updated" class="status-message">Loading last update time...</div>
+        <p id="totalWordCount" class="word-count"></p>
+      </div>
+
+      <div class="center-button">
+        <button type="button" class="primary-button" id="verify-btn">Verify Last Modified Time</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    function getWordCountOf(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (!section) return 0;
+      const includePs = Array.from(section.querySelectorAll('p')).filter(p => {
+        if (p.classList.contains('sources-panel')) return false;
+        if (p.classList.contains('media-actions')) return false;
+        if (p.closest('.sources-list')) return false;
+        if (p.closest('figure')) return false;
+        return true;
+      });
+
+      const text = includePs.map(p => p.textContent || "").join(' ');
+      const words = (text.trim().match(/\b\w+\b/g) || []);
+      return words.length;
+    }
+
+    function updateTotalWordCount() {
+      const abstract = getWordCountOf("Abstract_InText");
+      const intro = getWordCountOf("Introduction_InText");
+      const analysis = getWordCountOf("Analysis_InText");
+      const total = abstract + intro + analysis;
+      const out = document.getElementById("totalWordCount");
+      if (out) out.textContent = `Total word count: ${total}`;
+    }
+
+    function loadGhSettings() {
+      let stored = {};
+      try { stored = JSON.parse(localStorage.getItem("ghSettings") || "{}"); } catch (e) {}
+      const defaults = {
+        owner: "nr0025",
+        repo: "FY0025",
+        path: "HTML/Thrust vectoring.html",
+        branches: ["main", "master", "gh-pages"]
+      };
+      const branches = Array.isArray(stored.branches)
+        ? stored.branches
+        : (typeof stored.branches === "string" ? stored.branches.split(",") : defaults.branches);
+      return {
+        owner: stored.owner || defaults.owner,
+        repo: stored.repo || defaults.repo,
+        path: stored.path || defaults.path,
+        branches: branches.map(s => String(s).trim()).filter(Boolean)
+      };
+    }
+
+    function renderGhSettings() {
+      const s = loadGhSettings();
+      const owner = document.getElementById("gh-owner"); if (owner) owner.value = s.owner;
+      const repo = document.getElementById("gh-repo"); if (repo) repo.value = s.repo;
+      const path = document.getElementById("gh-path"); if (path) path.value = s.path;
+      const branches = document.getElementById("gh-branches"); if (branches) branches.value = s.branches.join(", ");
+    }
+
+    function saveGhSettings() {
+      const owner = (document.getElementById("gh-owner")?.value || "").trim();
+      const repo = (document.getElementById("gh-repo")?.value || "").trim();
+      const path = (document.getElementById("gh-path")?.value || "").trim();
+      const branchesStr = (document.getElementById("gh-branches")?.value || "").trim();
+      const branches = branchesStr
+        ? branchesStr.split(",").map(s => s.trim()).filter(Boolean)
+        : ["main", "master", "gh-pages"];
+      const settings = { owner, repo, path, branches };
+      localStorage.setItem("ghSettings", JSON.stringify(settings));
+      return settings;
+    }
+
+    function bindGhSettings() {
+      const btn = document.getElementById("save-gh-settings");
+      if (!btn) return;
+      btn.addEventListener("click", () => {
+        saveGhSettings();
+        const status = document.getElementById("last-updated");
+        if (status) status.textContent = "Settings saved. Click Verify to check last modified time.";
+      });
+    }
+
+    async function getLastUpdatedTime() {
+      const { owner, repo, path, branches: branchesToTry } = loadGhSettings();
+      const statusEl = document.getElementById("last-updated");
+      const headers = { "Accept": "application/vnd.github.v3+json" };
+    
+      async function branchHasPath(branch) {
+        const contentsURL = `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(path)}?ref=${branch}`;
+        const r = await fetch(contentsURL, { headers });
+        if (r.status === 200) return true;
+        if (r.status === 404) return false;
+        return false;
+      }
+    
+      async function latestCommitOnBranch(branch) {
+        const commitsURL = `https://api.github.com/repos/${owner}/${repo}/commits?path=${encodeURIComponent(path)}&sha=${branch}&per_page=1`;
+        const r = await fetch(commitsURL, { headers });
+        if (!r.ok) return null;
+        const data = await r.json();
+        if (Array.isArray(data) && data.length > 0) return data[0];
+        return null;
+      }
+    
+           try {
+        for (const branch of branchesToTry) {
+          const exists = await branchHasPath(branch);
+          if (!exists) continue;
+          const commit = await latestCommitOnBranch(branch);
+          if (commit) {
+            const lastCommitDate = new Date(commit.commit.committer.date);
+            statusEl.textContent = `Last Modified Time (branch: ${branch}): ${lastCommitDate.toLocaleString()}`;
+            return;
+          }
+        }
+        if (statusEl) {
+          statusEl.textContent = "Could not find this file on any of the configured branches.";
+        }
+      } catch (err) {
+        console.error(err);
+        if (statusEl) {
+          statusEl.textContent = "Error checking last modified time from GitHub.";
+        }
+      }
+    }
+
+    function toggleListVisibility(button, list) {
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!expanded));
+      if (expanded) {
+        list.hidden = true;
+        list.classList.remove("is-visible");
+      } else {
+        list.hidden = false;
+        list.classList.remove("is-hidden");
+        requestAnimationFrame(() => list.classList.add("is-visible"));
+      }
+    }
+
+    function bindSourceToggles() {
+      document.querySelectorAll(".toggle-sources[aria-controls]").forEach(btn => {
+        const id = btn.getAttribute("aria-controls");
+        const list = document.getElementById(id);
+        if (!list) return;
+        btn.addEventListener("click", () => toggleListVisibility(btn, list));
+      });
+    }
+
+    
+    function bindVerifyButton() {
+      const btn = document.getElementById("verify-btn");
+      if (!btn) return;
+      btn.addEventListener("click", async () => {
+        const status = document.getElementById("last-updated");
+        if (status) status.textContent = "Verifying...";
+        await getLastUpdatedTime();
+        alert("Last modified time has been successfully verified from the GitHub API.");
+      });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      // Bind UI first so errors elsewhere don't break buttons
+      bindSourceToggles();
+      renderGhSettings();
+      bindGhSettings();
+      bindVerifyButton();
+      updateTotalWordCount();
+      // Fetch last updated time (non-blocking)
+      getLastUpdatedTime();
+    });
+  </script>
+</body>
+</html>
